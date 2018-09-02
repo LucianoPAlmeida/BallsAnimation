@@ -110,7 +110,7 @@ class BallsPulseLoadingIndicator: UIView {
     }
     
     private func setupBalls() {
-        (0..<numberOfBalls).forEach({ i in
+        for _ in 0..<numberOfBalls {
             let container = CALayer()
             let ball = BallLayer()
             ball.backgroundColor = ballsColor.cgColor
@@ -118,7 +118,7 @@ class BallsPulseLoadingIndicator: UIView {
             containersBalls.append(container)
             container.addSublayer(ball)
             layer.addSublayer(container)
-        })
+        }
     }
     
     func startAnimating() {
@@ -220,12 +220,12 @@ extension BallsPulseLoadingIndicator: CAAnimationDelegate {
     private func handleAnimationFinished(idx: Int, animationType: BallLayer.AnimationType) {
         let current = layersBalls[idx]
         current.isCollapsed = animationType == .collapse
-        let nIdx = nextIdx(for: idx)
-        let next = layersBalls[nIdx]
-        if next.isCollapsed {
-            uncolapseBall(at: nIdx)
+        let nextBallIdx = nextIdx(for: idx)
+        let nextBall = layersBalls[nextBallIdx]
+        if nextBall.isCollapsed {
+            uncolapseBall(at: nextBallIdx)
         } else {
-            collapseBall(at: nIdx, rate: collapseRate)
+            collapseBall(at: nextBallIdx, rate: collapseRate)
         }
     }
 }
