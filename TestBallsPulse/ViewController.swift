@@ -186,7 +186,7 @@ class BallsPulseLoadingIndicator: UIView {
         group.delegate = self
         group.duration = animationTime
         group.repeatCount = 1
-        group.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        group.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         group.animations = [sizeAnimation, animation, cornerAnimation]
         group.isRemovedOnCompletion = true
         return group
