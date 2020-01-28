@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B201470223E0EA7200A46301 /* BallsPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201470123E0EA7200A46301 /* BallsPulse.swift */; };
 		B2FB9FB821363F8800804F28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB9FB721363F8800804F28 /* AppDelegate.swift */; };
 		B2FB9FBA21363F8800804F28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB9FB921363F8800804F28 /* ViewController.swift */; };
 		B2FB9FBD21363F8800804F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FB9FBB21363F8800804F28 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B201470123E0EA7200A46301 /* BallsPulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallsPulse.swift; sourceTree = "<group>"; };
 		B2FB9FB421363F8800804F28 /* TestBallsPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBallsPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FB9FB721363F8800804F28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2FB9FB921363F8800804F28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				B2FB9FBE21363F8A00804F28 /* Assets.xcassets */,
 				B2FB9FC021363F8A00804F28 /* LaunchScreen.storyboard */,
 				B2FB9FC321363F8A00804F28 /* Info.plist */,
+				B201470123E0EA7200A46301 /* BallsPulse.swift */,
 			);
 			path = TestBallsPulse;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2FB9FBA21363F8800804F28 /* ViewController.swift in Sources */,
+				B201470223E0EA7200A46301 /* BallsPulse.swift in Sources */,
 				B2FB9FB821363F8800804F28 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,13 +287,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43Z9WE284C;
 				INFOPLIST_FILE = TestBallsPulse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.TestBallsPulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,13 +306,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43Z9WE284C;
 				INFOPLIST_FILE = TestBallsPulse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.TestBallsPulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
